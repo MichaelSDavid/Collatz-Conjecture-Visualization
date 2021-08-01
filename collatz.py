@@ -1,5 +1,6 @@
 # Import(s)
 import matplotlib.pyplot as plt
+from math import cos, pi
 
 # Var init and input collection
 n = int(input("Enter the initial value (n ∈ ℤ⁺): "))
@@ -9,16 +10,16 @@ y = []
 # Start sequence with n
 y.append(n)
 
-# Check conditions until the final number is 1
+# Collatz function
+def collatz(z):
+	# Unification of 3x+1 for odd and x/2 for even
+	return 0.25*(2 + 7*z + (-1)*(2 + 5*z)*cos(pi*z))
+
+# Repeat until the 4,2,1 loop
 while y[-1] != 1.0:
 	count += 1
 	x.append(count)
-	# Rule for odd numbers (3x+1)
-	if y[-1] % 2 != 0:
-		y.append((3 * (y[-1])) + 1)
-	# Rule for even numbers (x/2)
-	elif y[-1] % 2 == 0:
-		y.append(y[-1] / 2)
+	y.append(collatz(y[-1]))
 	print(y[-1], end="   ")
 
 # Zip coords
