@@ -13,10 +13,10 @@ y.append(n)
 while y[-1] != 1.0:
 	count += 1
 	x.append(count)
-	# Odd (not divisible by 2)
+	# Rule for odd numbers (3x+1)
 	if y[-1] % 2 != 0:
 		y.append((3 * (y[-1])) + 1)
-	# Even (is divisible by 2)
+	# Rule for even numbers (x/2)
 	elif y[-1] % 2 == 0:
 		y.append(y[-1] / 2)
 	print(y[-1], end="   ")
@@ -29,5 +29,5 @@ for i in list(zip(x, y)):
 plt.xlabel("Iterations")
 plt.ylabel("Number (n)")
 plt.title(f"Collatz Conjecture for n = {n}")
-plt.plot(x, y, "bo--")
+plt.plot(x, y, "bo-")
 plt.show()
