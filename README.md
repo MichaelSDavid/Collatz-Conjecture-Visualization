@@ -5,5 +5,5 @@ A visualization of the Collatz Conjecture for any initial positive integer, n, c
 
 Or try it live on [trinket.io](https://trinket.io/python3/6b7f1d9c74)!
 
-<img src="https://raw.githubusercontent.com/MichaelSDavid/Collatz-Conjecture-Visualization/main/bruhmomentum.png" width="800" height="446">
+<img src="https://cdn.discordapp.com/attachments/342481673822404608/871477004199948308/unknown.png" width="800" height="446">
 <br/>
