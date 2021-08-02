@@ -1,6 +1,5 @@
 # Import(s)
 import matplotlib.pyplot as plt
-from math import cos, pi
 
 # Var init and input collection
 n = int(input("Enter the initial value (n ∈ ℤ⁺): "))
