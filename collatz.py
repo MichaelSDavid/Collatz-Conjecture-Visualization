@@ -13,7 +13,7 @@ y.append(n)
 # Collatz function
 def collatz(z):
 	# Unification of 3x+1 for odd and x/2 for even
-	return 0.25*(2 + 7*z + (-1)*(2 + 5*z)*cos(pi*z))
+	return 0.25*(2 + 7*z + (-1)*(2 + 5*z)*((-1) ** z))
 
 # Repeat until the 4,2,1 loop
 while y[-1] != 1.0:
